@@ -1,0 +1,21 @@
+[package]
+name = "sol_mpc"
+version = "0.1.0"
+edition = "2024"
+description = "Open source MPC for Solana for transfer Solana"
+
+[dependencies]
+solana-client = "2.1.18"
+solana-sdk = "2.1.18"
+solana-program = "2.1.18"
+spl-memo = "6.0.0"
+clap = { version = "4.5.41", features = ["derive", "color"] }
+bs58 = "0.5.1"
+rand = "0.8.5"
+ed25519-dalek = "2.2.0"
+multi-party-eddsa = { git = "https://github.com/ZenGo-X/multi-party-eddsa.git", rev = "4b5e5c8d8e92f94eed38b037e0d83ad0d2a144ea" }
+curv = {package = "curv-kzen", version = "0.9" }
+
+[dev-dependencies]
+solana-test-validator = "2.1.18"
+solana-streamer = "2.1.18"
